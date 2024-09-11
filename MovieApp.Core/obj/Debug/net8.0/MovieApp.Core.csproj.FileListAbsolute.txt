@@ -1,0 +1,14 @@
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\bin\Debug\net8.0\MovieApp.Core.deps.json
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\bin\Debug\net8.0\MovieApp.Core.runtimeconfig.json
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\bin\Debug\net8.0\MovieApp.Core.dll
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\bin\Debug\net8.0\MovieApp.Core.pdb
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieApp.Core.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieApp.Core.AssemblyInfo.cs
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieApp.Core.dll
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\refint\MovieApp.Core.dll
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieApp.Core.pdb
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieApp.Core.genruntimeconfig.cache
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\ref\MovieApp.Core.dll
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieApp.Core.csproj.AssemblyReference.cache
