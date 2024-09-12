@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using FluentValidation;
+using Microsoft.AspNetCore.Http;
 using MovieApp.Business.DTOs.MovieDTOs;
 
 namespace MovieApp.Business.DTOs.MovieDTOs;
 
-    public record MovieCreateDTO(string Title, string Desc, bool IsDeleted);
+    public record MovieCreateDTO(string Title, string Desc, bool IsDeleted, int GenreId, IFormFile Image);
 
 
 
@@ -27,5 +28,11 @@ public class MovieCreateDtoValidator : AbstractValidator<MovieCreateDTO>
             .MaximumLength(800).WithMessage("Length must be less than 800");
 
         RuleFor(x => x.IsDeleted).NotNull();
+        RuleFor(x => x.GenreId).NotNull().NotEmpty();
+        RuleFor(x => x.Image)
+            .Must(i => i.ContentType == "image/jpeg" || i.ContentType == "image/png")
+            .WithMessage("Content Type must be jpeg or png")
+            .Must(i => i.Length > 2 * 1024 * 1024)
+            .WithMessage("Image size must be less than 2 Mb");
     }
 } 

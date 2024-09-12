@@ -17,3 +17,4 @@ C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Business\bin\Debug\net8.0\Mov
 C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Business\bin\Debug\net8.0\MovieApp.Core.pdb
 C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Business\obj\Debug\net8.0\MovieApp.Business.csproj.AssemblyReference.cache
 C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Business\obj\Debug\net8.0\MovieApp.EB28DBE0.Up2Date
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Business\obj\Debug\net8.0\MovieApp.Business.sourcelink.json

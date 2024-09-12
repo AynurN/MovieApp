@@ -16,6 +16,8 @@ namespace MovieApp.Data
         public static void AddRepositories(this IServiceCollection services, string connectionStr)
         {
             services.AddScoped<IMovieRepository, MovieRepository>();
+            services.AddScoped<IGenreRepository, GenreRepository>();
+            services.AddScoped<IMovieImageRepository,MovieImageRepository>();   
             services.AddDbContext<AppDbContext>(opt =>
             opt.UseSqlServer(connectionStr)
             );

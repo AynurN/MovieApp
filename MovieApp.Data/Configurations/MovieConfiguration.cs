@@ -15,6 +15,11 @@ namespace MovieApp.Data.Configurations
         {
             builder.Property(m => m.Title).IsRequired().HasMaxLength(200);
             builder.Property(m=>m.Desc).IsRequired().HasMaxLength(800);
+            //relation
+            builder.HasOne(x => x.Genre)
+           .WithMany(x => x.Movies)
+           .HasForeignKey(x => x.GenreId)
+           .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

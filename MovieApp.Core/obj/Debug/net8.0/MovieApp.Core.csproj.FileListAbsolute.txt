@@ -12,3 +12,4 @@ C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieAp
 C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieApp.Core.genruntimeconfig.cache
 C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\ref\MovieApp.Core.dll
 C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieApp.Core.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.Core\obj\Debug\net8.0\MovieApp.Core.sourcelink.json

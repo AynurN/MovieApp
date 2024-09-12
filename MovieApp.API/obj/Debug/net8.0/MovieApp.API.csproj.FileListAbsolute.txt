@@ -152,3 +152,5 @@ C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.API\bin\Debug\net8.0\AutoMapp
 C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.API\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.API\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.API\obj\Debug\net8.0\MovieApp.API.sourcelink.json
+C:\Users\user\Desktop\PB-201\API\MovieApp\MovieApp.API\bin\Debug\net8.0\MovieApp.API.staticwebassets.runtime.json
