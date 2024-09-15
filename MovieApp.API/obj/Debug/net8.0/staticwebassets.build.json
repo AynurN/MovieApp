@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PASbrvoT/IqYsSeSgbjy5pIZ+XLhMUvROkemWTYAZBs=",
+  "Hash": "VA5XFca/95rAMsWalKw+2ZFk7OUQ5rS3mCiIlWqS91E=",
   "Source": "MovieApp.API",
   "BasePath": "_content/MovieApp.API",
   "Mode": "Default",
@@ -15,5 +15,63 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.API\\wwwroot\\Images\\bd59e7b6-4197-41bd-8411-7d7ca70f2d4bd978f013-ae83-4461-b9f2-cd473f283000product-2.jpg",
+      "SourceId": "MovieApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.API\\wwwroot\\",
+      "BasePath": "_content/MovieApp.API",
+      "RelativePath": "Images/bd59e7b6-4197-41bd-8411-7d7ca70f2d4bd978f013-ae83-4461-b9f2-cd473f283000product-2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\bd59e7b6-4197-41bd-8411-7d7ca70f2d4bd978f013-ae83-4461-b9f2-cd473f283000product-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.API\\wwwroot\\Images\\dca28ca8-c4d1-45ff-89aa-ae82cdc4362e80df1a81-def4-4978-8f41-ee6f0bad9b2eproduct-details-1.jpg",
+      "SourceId": "MovieApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.API\\wwwroot\\",
+      "BasePath": "_content/MovieApp.API",
+      "RelativePath": "Images/dca28ca8-c4d1-45ff-89aa-ae82cdc4362e80df1a81-def4-4978-8f41-ee6f0bad9b2eproduct-details-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\dca28ca8-c4d1-45ff-89aa-ae82cdc4362e80df1a81-def4-4978-8f41-ee6f0bad9b2eproduct-details-1.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.API\\wwwroot\\Images\\f4be2aa1-0da6-4976-b272-5f444412d4049b868c0e-30a3-495f-8576-dafce4af1e22product-details-1.jpg",
+      "SourceId": "MovieApp.API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.API\\wwwroot\\",
+      "BasePath": "_content/MovieApp.API",
+      "RelativePath": "Images/f4be2aa1-0da6-4976-b272-5f444412d4049b868c0e-30a3-495f-8576-dafce4af1e22product-details-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\f4be2aa1-0da6-4976-b272-5f444412d4049b868c0e-30a3-495f-8576-dafce4af1e22product-details-1.jpg"
+    }
+  ]
 }

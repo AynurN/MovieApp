@@ -43,8 +43,12 @@ namespace MovieApp.Business.Implementations
                 ModifiedAt = DateTime.Now,
                 IsDeleted = false
             };
-
+            if (movie.MovieImages == null)
+            {
+                movie.MovieImages = new List<MovieImage>();
+            }
             movie.MovieImages.Add(movieImage);
+
             movie.CreatedAt = DateTime.Now;
             movie.ModifiedAt = DateTime.Now;
             await repo.CreateAsync(movie);
@@ -104,6 +108,10 @@ namespace MovieApp.Business.Implementations
                     ModifiedAt = DateTime.Now,
                     IsDeleted = false
                 };
+                if (movie.MovieImages == null)
+                {
+                    movie.MovieImages = new List<MovieImage>();
+                }
 
                 movie.MovieImages.Add(movieImage);
             }

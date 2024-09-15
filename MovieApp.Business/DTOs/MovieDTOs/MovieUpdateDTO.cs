@@ -30,7 +30,7 @@ public class MovieUpdateDtoValidator : AbstractValidator<MovieUpdateDTO>
         RuleFor(x => x.Image)
             .Must(i => i.ContentType == "image/jpeg" || i.ContentType == "image/png")
             .WithMessage("Content Type must be jpeg or png")
-            .Must(i => i.Length > 2 * 1024 * 1024)
+            .Must(i => i.Length < 2 * 1024 * 1024)
             .WithMessage("Image size must be less than 2 Mb");
 
 
