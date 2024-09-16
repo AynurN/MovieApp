@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "91dmNs0kWhI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.MVC\\MovieApp.MVC.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\restsharp\\112.0.0\\restsharp.112.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
