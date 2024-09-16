@@ -51,7 +51,7 @@ namespace MovieApp.API.Controllers
         }
 
 
-        [Authorize(Roles = "SuperAdmin,Admin,Editor")]
+       // [Authorize(Roles = "SuperAdmin,Admin,Editor")]
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] GenreCreateDTO dto)
         {
@@ -66,7 +66,7 @@ namespace MovieApp.API.Controllers
             return Ok();
         }
 
-        [Authorize(Roles = "SuperAdmin,Admin,Editor")]
+      //  [Authorize(Roles = "SuperAdmin,Admin,Editor")]
         [HttpPut]
         public async Task<IActionResult> Update(int id, [FromForm] GenreUpdateDTO dto)
         {
@@ -89,7 +89,7 @@ namespace MovieApp.API.Controllers
             return Ok();
 
         }
-        [Authorize(Roles = "SuperAdmin,Admin,Editor")]
+       // [Authorize(Roles = "SuperAdmin,Admin,Editor")]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

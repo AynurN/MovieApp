@@ -15,5 +15,6 @@ namespace MovieApp.Core.Models
         public int GenreId { get; set; }
         public Genre Genre { get; set; }
         public ICollection<MovieImage> MovieImages { get; set; }
+        public ICollection<Comment> Comments { get; set; }
     }
 }

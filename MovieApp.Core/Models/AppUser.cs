@@ -10,5 +10,8 @@ namespace MovieApp.Core.Models
     public class AppUser : IdentityUser
     {
         public string Fullname { get; set; }
+        //relations
+        public ICollection<Comment> Comments { get; set; }
+
     }
 }

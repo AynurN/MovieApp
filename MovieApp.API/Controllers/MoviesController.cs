@@ -22,7 +22,7 @@ namespace MovieApp.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await movieService.GetByExpessionAsync(true,null,"Genre","MovieImages"));
+            return Ok(await movieService.GetByExpessionAsync(true,null,"Genre","MovieImages","Comments.AppUser"));
         }
 
 
@@ -32,7 +32,7 @@ namespace MovieApp.API.Controllers
             MovieGetDTO dto = null;
             try
             {
-                dto = await movieService.GetOneByExpressionAsync(false,m=>m.Id==id,"Genre", "MovieImages" );
+                dto = await movieService.GetOneByExpressionAsync(false,m=>m.Id==id,"Genre", "MovieImages", "Comments.AppUser" );
             }
             catch (InvalidIdException ex)
             {
@@ -49,7 +49,7 @@ namespace MovieApp.API.Controllers
             return Ok(dto);
         }
 
-        [Authorize(Roles ="SuperAdmin,Admin,Editor")]
+       // [Authorize(Roles ="SuperAdmin,Admin,Editor")]
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] MovieCreateDTO dto)
         {
@@ -64,7 +64,7 @@ namespace MovieApp.API.Controllers
             return Ok();
         }
 
-        [Authorize(Roles = "SuperAdmin,Admin,Editor")]
+       // [Authorize(Roles = "SuperAdmin,Admin,Editor")]
         [HttpPut]
         public async Task<IActionResult> Update(int id, [FromForm] MovieUpdateDTO dto)
         {
@@ -87,7 +87,7 @@ namespace MovieApp.API.Controllers
             return Ok();
 
         }
-        [Authorize(Roles = "SuperAdmin,Admin")]
+       // [Authorize(Roles = "SuperAdmin,Admin")]
         [HttpDelete]
         public async Task<IActionResult> Delete(int id)
         {

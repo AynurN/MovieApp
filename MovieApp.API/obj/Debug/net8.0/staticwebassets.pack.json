@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.API\\wwwroot\\Images\\7aee752c-0dab-4b58-b5e0-f25e4529720ecart-product-1.jpg",
+      "PackagePath": "staticwebassets\\Images\\7aee752c-0dab-4b58-b5e0-f25e4529720ecart-product-1.jpg"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.API\\wwwroot\\Images\\bd59e7b6-4197-41bd-8411-7d7ca70f2d4bd978f013-ae83-4461-b9f2-cd473f283000product-2.jpg",
       "PackagePath": "staticwebassets\\Images\\bd59e7b6-4197-41bd-8411-7d7ca70f2d4bd978f013-ae83-4461-b9f2-cd473f283000product-2.jpg"
     },

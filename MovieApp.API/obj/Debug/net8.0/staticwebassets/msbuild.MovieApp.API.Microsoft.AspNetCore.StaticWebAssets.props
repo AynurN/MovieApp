@@ -1,5 +1,21 @@
 ﻿<Project>
   <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\7aee752c-0dab-4b58-b5e0-f25e4529720ecart-product-1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>MovieApp.API</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/MovieApp.API</BasePath>
+      <RelativePath>Images/7aee752c-0dab-4b58-b5e0-f25e4529720ecart-product-1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\7aee752c-0dab-4b58-b5e0-f25e4529720ecart-product-1.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\bd59e7b6-4197-41bd-8411-7d7ca70f2d4bd978f013-ae83-4461-b9f2-cd473f283000product-2.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>MovieApp.API</SourceId>

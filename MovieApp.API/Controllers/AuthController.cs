@@ -61,27 +61,30 @@ namespace MovieApp.API.Controllers
         //[HttpPost("[action]")]
         //public async Task<IActionResult> CreateRole()
         //{
-        //    //IdentityRole role1 = new IdentityRole("Admin");
-        //    //IdentityRole role2 = new IdentityRole("SuperAdmin");
-        //    //IdentityRole role3 = new IdentityRole("Member");
+        //    IdentityRole role1 = new IdentityRole("Admin");
+        //    IdentityRole role2 = new IdentityRole("SuperAdmin");
+        //    IdentityRole role3 = new IdentityRole("Member");
         //    IdentityRole role4 = new IdentityRole("Editor");
 
         //    await roleManager.CreateAsync(role4);
+        //    await roleManager.CreateAsync(role1);
+        //    await roleManager.CreateAsync(role2);
+        //    await roleManager.CreateAsync(role3);
 
         //    return Ok();
 
         //}
-        //[HttpPost]
-        //public async Task<IActionResult> CreateAdmin()
+       //[HttpPost("[action]")]
+       // public async Task<IActionResult> CreateAdmin()
         //{
-        //    //AppUser user = new AppUser();
-        //    //user.UserName = "SuperAdmin";
-        //    //user.Email = "super@gmail.com";
-        //    //user.Fullname = "Super Admin";
-        //    //await userManager.CreateAsync(user, "Salam123@");
-        //    AppUser user = await userManager.FindByNameAsync("SuperAdmin");
-        //   await userManager.AddToRoleAsync(user, "SuperAdmin");
-        //    return Ok();
-        //}
+            //    AppUser user = new AppUser();
+            //    user.UserName = "SuperAdmin";
+            //    user.Email = "super@gmail.com";
+            //    user.Fullname = "Super Admin";
+            //    await userManager.CreateAsync(user, "Salam123@");
+       //     AppUser user = await userManager.FindByNameAsync("SuperAdmin");
+       //     await userManager.AddToRoleAsync(user, "SuperAdmin");
+       //     return Ok();
+       // }
     }
 }

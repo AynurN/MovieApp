@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using MovieApp.Business.DTOs.CommentDTOs;
 using MovieApp.Business.DTOs.GenreDTOs;
 using MovieApp.Business.DTOs.MovieDTOs;
 using MovieApp.Business.DTOs.MovieImageDTOs;
@@ -19,12 +20,19 @@ namespace MovieApp.Business
             CreateMap<Movie, MovieGetDTO>().ReverseMap();
             CreateMap< Movie, MovieCreateDTO>().ReverseMap();
             CreateMap< Movie, MovieUpdateDTO>().ReverseMap();
+
             CreateMap< Genre, GenreUpdateDTO>().ReverseMap();
             CreateMap< Genre, GenreCreateDTO>().ReverseMap();
             CreateMap< Genre, GenreGetDTO>().ReverseMap();
+
             CreateMap< MovieImage, MovieImageGetDTO>().ReverseMap();
+
             CreateMap< AppUser, UserLoginDTO>().ReverseMap();
             CreateMap< AppUser, UserRegisterDTO>().ReverseMap();
+
+            CreateMap< Comment, CommentCreateDTO>().ReverseMap();
+            CreateMap< Comment, CommentGetDTO>().ReverseMap();
+            CreateMap< Comment, CommentUpdateDTO>().ReverseMap();
             
         }
     }
