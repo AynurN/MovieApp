@@ -23,5 +23,17 @@ namespace MovieApp.MVC.Controllers
             List<GenreGetVM> vm=response.Data;
             return View(vm);
         }
+        public async Task<IActionResult> Detail(int id)
+        {
+            var request = new RestRequest($"Genres/{id}", Method.Get);
+            var response=await restClient.ExecuteAsync<GenreGetVM>(request);
+            if (!response.IsSuccessful)
+            {
+                ViewBag.Err = response.ErrorMessage;
+                return View();
+            }
+            GenreGetVM vm=response.Data;
+            return View(vm);
+        }
     }
 }
