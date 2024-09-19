@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MovieApp.API.ApiResponses;
 using MovieApp.Business.DTOs.GenreDTOs;
 using MovieApp.Business.DTOs.MovieDTOs;
 using MovieApp.Business.Exceptions;
@@ -23,7 +24,13 @@ namespace MovieApp.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await genreService.GetByExpessionAsync(true));
+            var data = await genreService.GetByExpessionAsync(true);
+            return Ok(new ApiResponse<ICollection<GenreGetDTO>>
+            {
+                StatusCode = StatusCodes.Status200OK,
+                ErrorMessage = null,
+                Data = data
+            });
         }
 
 
@@ -37,17 +44,37 @@ namespace MovieApp.API.Controllers
             }
             catch (InvalidIdException ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new ApiResponse<GenreGetDTO>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest, //400
+                    ErrorMessage = "Id is invalid!",
+                    Data = null
+                });
             }
             catch (EntityNotFoundException ex)
             {
-                return NotFound(ex.Message);
+                return NotFound(new ApiResponse<GenreGetDTO>
+                {
+                    StatusCode = ex.StatusCode,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new ApiResponse<GenreGetDTO>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
-            return Ok(dto);
+            return Ok(new ApiResponse<GenreGetDTO>
+            {
+                Data = dto,
+                StatusCode = StatusCodes.Status200OK,
+                ErrorMessage = null
+            });
         }
 
 
@@ -59,11 +86,31 @@ namespace MovieApp.API.Controllers
             {
                 await genreService.CreateAsync(dto);
             }
+            catch (GenreAlreadyExistsException ex)
+            {
+                return BadRequest(new ApiResponse<GenreCreateDTO>
+                {
+                    StatusCode = ex.StatusCode,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
+            }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new ApiResponse<GenreCreateDTO>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
-            return Ok();
+
+            return Ok(new ApiResponse<GenreCreateDTO>
+            {
+                Data = null,
+                StatusCode = StatusCodes.Status200OK,
+                ErrorMessage = null
+            });
         }
 
       //  [Authorize(Roles = "SuperAdmin,Admin,Editor")]
@@ -74,19 +121,49 @@ namespace MovieApp.API.Controllers
             {
                 await genreService.UpdateAsync(id, dto);
             }
-            catch (InvalidIdException ex)
+            catch (InvalidIdException)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new ApiResponse<GenreUpdateDTO>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = "Id yanlisdir",
+                    Data = null
+                });
             }
             catch (EntityNotFoundException ex)
             {
-                return NotFound(ex.Message);
+                return NotFound(new ApiResponse<GenreUpdateDTO>
+                {
+                    StatusCode = ex.StatusCode,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
+            }
+            catch (GenreAlreadyExistsException ex)
+            {
+                return BadRequest(new ApiResponse<object>
+                {
+                    StatusCode = ex.StatusCode,
+                    ErrorMessage = ex.Message,
+                    Data = null,
+                    PropertyName = ex.PropName
+                });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new ApiResponse<GenreUpdateDTO>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
-            return Ok();
+            return Ok(new ApiResponse<GenreUpdateDTO>
+            {
+                Data = null,
+                StatusCode = StatusCodes.Status200OK,
+                ErrorMessage = null
+            });
 
         }
        // [Authorize(Roles = "SuperAdmin,Admin,Editor")]
@@ -97,19 +174,40 @@ namespace MovieApp.API.Controllers
             {
                 await genreService.DeleteAsync(id);
             }
-            catch (InvalidIdException ex)
+            catch (InvalidIdException)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new ApiResponse<GenreGetDTO>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest, 
+                    ErrorMessage = "Id is invalid!",
+                    Data = null
+                });
             }
             catch (EntityNotFoundException ex)
             {
-                return NotFound(ex.Message);
+                return NotFound(new ApiResponse<GenreGetDTO>
+                {
+                    StatusCode = ex.StatusCode,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(new ApiResponse<GenreGetDTO>
+                {
+                    StatusCode = StatusCodes.Status400BadRequest,
+                    ErrorMessage = ex.Message,
+                    Data = null
+                });
             }
-            return Ok();
+
+            return Ok(new ApiResponse<object>
+            {
+                StatusCode = StatusCodes.Status200OK,
+                Data = null,
+                ErrorMessage = null
+            });
         }
     }
 }

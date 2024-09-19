@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using MovieApp.Business.DTOs.GenreDTOs;
 using MovieApp.Business.DTOs.MovieDTOs;
 using MovieApp.Business.Exceptions;
@@ -25,14 +26,7 @@ namespace MovieApp.Business.Implementations
             this.repo = repo;
             this.mapper = mapper;
         }
-        public async Task CreateAsync(GenreCreateDTO dTO)
-        {
-            Genre genre= mapper.Map<Genre>(dTO);
-            genre.CreatedAt = DateTime.Now;
-            genre.ModifiedAt = DateTime.Now;
-           await  repo.CreateAsync(genre);
-           await  repo.CommitAsync();
-        }
+       
 
         public async Task DeleteAsync(int id)
         {
@@ -73,11 +67,25 @@ namespace MovieApp.Business.Implementations
             return await repo.Table.AnyAsync(expression);
         }
 
+        public async Task CreateAsync(GenreCreateDTO dTO)
+        {
+            if(await IsExistAsync(g=>g.Name == dTO.Name))
+            {
+                throw new GenreAlreadyExistsException("Genre already exists!");
+            }
+            Genre genre = mapper.Map<Genre>(dTO);
+            genre.CreatedAt = DateTime.Now;
+            genre.ModifiedAt = DateTime.Now;
+            await repo.CreateAsync(genre);
+            await repo.CommitAsync();
+        }
         public async Task UpdateAsync(int id, GenreUpdateDTO dTO)
         {
             if (id < 1) throw new InvalidIdException("Id is not valid");
             Genre genre = await repo.GetByIdAsync(id);
             if (genre == null) throw new EntityNotFoundException("Genre not found!");
+            if (await IsExistAsync(g => g.Name.ToLower().Trim() == dTO.Name.ToLower().Trim() && g.Id!=id ))
+                 throw new GenreAlreadyExistsException("Genre already exists!");
             mapper.Map(dTO, genre);
             genre.ModifiedAt = DateTime.Now;
             await repo.CommitAsync();

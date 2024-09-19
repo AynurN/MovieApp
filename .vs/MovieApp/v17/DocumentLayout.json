@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3D597B83-832C-4EE9-8696-7AB759708663}|MovieApp.MVC\\MovieApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\movieapp\\movieapp.mvc\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D597B83-832C-4EE9-8696-7AB759708663}|MovieApp.MVC\\MovieApp.MVC.csproj|solutionrelative:movieapp.mvc\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D597B83-832C-4EE9-8696-7AB759708663}|MovieApp.MVC\\MovieApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\movieapp\\movieapp.mvc\\views\\genre\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3D597B83-832C-4EE9-8696-7AB759708663}|MovieApp.MVC\\MovieApp.MVC.csproj|solutionrelative:movieapp.mvc\\views\\genre\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3D597B83-832C-4EE9-8696-7AB759708663}|MovieApp.MVC\\MovieApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\movieapp\\movieapp.mvc\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D597B83-832C-4EE9-8696-7AB759708663}|MovieApp.MVC\\MovieApp.MVC.csproj|solutionrelative:movieapp.mvc\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D597B83-832C-4EE9-8696-7AB759708663}|MovieApp.MVC\\MovieApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\movieapp\\movieapp.mvc\\views\\genre\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{3D597B83-832C-4EE9-8696-7AB759708663}|MovieApp.MVC\\MovieApp.MVC.csproj|solutionrelative:movieapp.mvc\\views\\genre\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D597B83-832C-4EE9-8696-7AB759708663}|MovieApp.MVC\\MovieApp.MVC.csproj|c:\\users\\user\\desktop\\pb-201\\api\\movieapp\\movieapp.mvc\\views\\genre\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3D597B83-832C-4EE9-8696-7AB759708663}|MovieApp.MVC\\MovieApp.MVC.csproj|solutionrelative:movieapp.mvc\\views\\genre\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,6 +28,19 @@
           "DockedWidth": 200,
           "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.MVC\\Views\\Genre\\Create.cshtml",
+              "RelativeDocumentMoniker": "MovieApp.MVC\\Views\\Genre\\Create.cshtml",
+              "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.MVC\\Views\\Genre\\Create.cshtml",
+              "RelativeToolTip": "MovieApp.MVC\\Views\\Genre\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-19T06:52:09.783Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
@@ -39,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Detail.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.MVC\\Views\\Genre\\Detail.cshtml",
               "RelativeDocumentMoniker": "MovieApp.MVC\\Views\\Genre\\Detail.cshtml",
@@ -52,13 +69,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GenreController.cs",
               "DocumentMoniker": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.MVC\\Controllers\\GenreController.cs",
               "RelativeDocumentMoniker": "MovieApp.MVC\\Controllers\\GenreController.cs",
               "ToolTip": "C:\\Users\\user\\Desktop\\PB-201\\API\\MovieApp\\MovieApp.MVC\\Controllers\\GenreController.cs",
               "RelativeToolTip": "MovieApp.MVC\\Controllers\\GenreController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAkwCMAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACoAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-17T02:29:00.061Z",
               "EditorCaption": ""
